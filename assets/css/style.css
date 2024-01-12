@@ -8,7 +8,7 @@ body {
   font-size: 15px;
   line-height: 1.6rem;
   letter-spacing: 0.004em;
-   background-color: var(--tg-theme-bg-color); /* Основной цвет фона */
+   background-color: #161a2a;
     color: var(--tg-theme-text-color); /* Основной цвет текста */
   width: 100%;
   height: 100%;
@@ -46,6 +46,7 @@ a:hover, a:active, a:focus {
   background: #FFFFFF;
   color: #27173E;
   border-bottom: 1px solid #DCDCE9;
+  background: #171a2a!important;
 }
 
 .appHeader:before {
@@ -853,7 +854,7 @@ a:hover, a:active, a:focus {
 }
 
 .pt-1 {
-  padding-top: 8px !important;
+  padding-top: 3px !important;
 }
 
 .pt-2 {
@@ -962,7 +963,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #27173E;
+  color: #fff;
   margin: 0 0 10px 0;
 }
 
@@ -2513,6 +2514,7 @@ a.badge-dark {
   border: 0;
   border-radius: 0;
   padding-bottom: env(safe-area-inset-bottom);
+  background-color: #20263a;
 }
 
 .modal.action-sheet .modal-content .action-sheet-content {
@@ -2539,7 +2541,7 @@ a.badge-dark {
   display: block;
   font-size: 15px;
   padding: 10px 0;
-  color: #27173E;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -3546,7 +3548,7 @@ textarea,
   font-size: 11px;
   margin: 0;
   font-weight: 500;
-  color: #27173E;
+  color: #fff;
   display: block;
   line-height: 1.2em;
   text-align: left;
@@ -3798,7 +3800,7 @@ textarea,
 }
 
 .form-group.boxed .form-control {
-  background: #fff;
+  background: #20263a;
   box-shadow: none;
   height: 42px;
   border-radius: 10px;
@@ -5126,7 +5128,7 @@ textarea,
 }
 
 .section-heading .link {
-  color: var(--tg-theme-button-link-color);
+  color: #fff;
   font-size: 13px;
   font-weight: 500;
 }
@@ -5147,12 +5149,13 @@ textarea,
 }
 
 .wallet-card {
-  background: #ffffff;
+  background: #1d263b;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.09);
   border-radius: 10px;
   padding: 20px 24px;
   position: relative;
   z-index: 1;
+  
   
 }
 
@@ -5177,7 +5180,7 @@ textarea,
   align-items: center;
   justify-content: center;
   line-height: 1em;
-  color: #6236FF;
+  color: #fff;
   background: rgba(98, 54, 255, 0.1);
   width: 50px;
   height: 64px;
@@ -5191,7 +5194,7 @@ textarea,
 }
 
 .wallet-card .balance .title {
-  color: #27173E;
+  color: #fff;
   font-weight: 500;
   display: block;
   margin-bottom: 8px;
@@ -5205,7 +5208,7 @@ textarea,
 }
 
 .wallet-card .wallet-footer {
-  border-top: 1px solid #DCDCE9;
+
   padding-top: 20px;
   display: flex;
   align-items: flex-start;
