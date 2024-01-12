@@ -38,7 +38,6 @@ a:hover, a:active, a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
   top: env(safe-area-inset-top);
   left: 0;
   right: 0;
@@ -350,7 +349,7 @@ a:hover, a:active, a:focus {
 }
 
 #appCapsule {
-  padding: 56px 0;
+  padding: 0px 0;
   margin-bottom: env(safe-area-inset-bottom);
   margin-top: env(safe-area-inset-top);
 }
