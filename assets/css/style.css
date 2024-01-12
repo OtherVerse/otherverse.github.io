@@ -3539,6 +3539,9 @@ textarea,
   background-image: linear-gradient(transparent, transparent);
 }
 
+.form-control {
+	color: #ffffff;
+}
 .form-group {
   width: 100%;
 }
@@ -3590,7 +3593,7 @@ textarea,
 }
 
 .form-group .input-wrapper.active .label {
-  color: #6236FF !important;
+  color: #aa72ce !important;
 }
 
 .form-group.basic {
@@ -3807,9 +3810,13 @@ textarea,
 }
 
 .form-group.boxed .form-control:focus {
-  border-color: #6236FF;
+  border-color: #aa72ce;
 }
-
+/* Стилизация элементов option */
+.form-control.custom-select option {
+    background-color: #222639;
+    color: white;
+}
 .form-group.boxed textarea.form-control {
   height: auto;
   padding: 7px 40px 7px 16px;
