@@ -1783,11 +1783,11 @@ a.badge-dark {
 .btn-primary {
   background-color: var(--tg-theme-button-color)!important; /* Цвет кнопок */
   color: var(--tg-theme-button-text-color)!important; /* Цвет текста кнопок */
+  border: none!important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background: #4e1dff !important;
-  border-color: #4e1dff !important;
 }
 
 .btn-primary.disabled, .btn-primary:disabled {

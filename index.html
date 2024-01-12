@@ -35,9 +35,10 @@
             <img src="https://npunks.io/staticfiles/brand-logo.f3c32c4b.png" alt="logo" class="logo">
         </div>
 		<div class="right">
-           
+           <div id ="user_name"></div>
             <a href="app-settings.html" class="headerButton">
-                    <img id="userAvatar" alt="User Avatar" style="width: 100px; height: 100px;">
+		
+            <img id="userAvatar" alt="User Avatar" style="width: 100px; height: 100px;">
 
             </a>
         </div>
@@ -460,7 +461,20 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('userAvatar').src = userData.photo_url;
         } else {
             // Если фото нет, можно установить стандартное изображение
-            document.getElementById('userAvatar').src = 'path_to_default_image.jpg';
+            document.getElementById('userAvatar').src = '/assets/img/sample/avatar/avatar1.jpg';
+        }
+		
+		// Если у пользователя есть имя, отображаем его
+        if (userData.first_name) {
+            user_name = document.getElementById('user_name');
+			let p = document.createElement("p");
+			p.innerText = userData.first_name;
+			user_name.appendChild(p);
+        } else {
+            user_name = document.getElementById('user_name');
+			let p = document.createElement("p");
+			p.innerText = 'Punk";
+			user_name.appendChild(p);
         }
     }
 });
