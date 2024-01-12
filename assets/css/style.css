@@ -1781,9 +1781,6 @@ a.badge-dark {
 }
 
 .btn-primary {
- 
-  border-color: #6236FF !important;
-
   background-color: var(--tg-theme-button-color)!important; /* Цвет кнопок */
   color: var(--tg-theme-button-text-color)!important; /* Цвет текста кнопок */
 }
@@ -5125,10 +5122,11 @@ textarea,
   letter-spacing: -0.01em;
   line-height: 1em;
   padding-right: 16px;
+  color: var(--tg-theme-button-text-color);
 }
 
 .section-heading .link {
-  color: rgba(98, 54, 255, 0.5);
+  color: var(--tg-theme-button-link-color);
   font-size: 13px;
   font-weight: 500;
 }
