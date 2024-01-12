@@ -708,3 +708,12 @@ if (Finapp.Test.enable) {
     themeTesting();
 }
 //-----------------------------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", function() {
+VANTA.CELLS({
+  el: ".wallet-card-section",
+  color1: '#' + ('000000' + 0x227f9e.toString(16)).slice(-6),
+  color2: '#' + ('000000' + 0xaa72ce.toString(16)).slice(-6),
+});
+
+});

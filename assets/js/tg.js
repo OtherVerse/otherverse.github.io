@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded", function() {
         if (tg.initDataUnsafe.user) {
             // Установка имени пользователя
             let p = document.createElement("p");
-            p.innerText = tg.initDataUnsafe.user.first_name; // Исправлена опечатка
+            p.innerText = tg.initDataUnsafe.user.first_name;
             user_name.appendChild(p);
 
-            // Установка аватара пользователя, если он есть
-            if (tg.initDataUnsafe.user.photo_url) {
-                userAvatar.src = tg.initDataUnsafe.user.photo_url;
-            }
+            // Установка аватара пользователя или вашей собственной картинки
+            userAvatar.src = tg.initDataUnsafe.user.photo_url ? tg.initDataUnsafe.user.photo_url : 'assets/img/sample/avatar/avatar1.jpg';
         }
     }
 });
+
+

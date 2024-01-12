@@ -1686,6 +1686,7 @@ a.badge-dark {
   text-decoration: none !important;
   border-radius: 10px;
   border-width: 2px;
+  border: 2px solid #aa72ce;
 }
 
 .btn i.icon,
@@ -1781,9 +1782,8 @@ a.badge-dark {
 }
 
 .btn-primary {
-  background-color: var(--tg-theme-button-color)!important; /* Цвет кнопок */
-  color: var(--tg-theme-button-text-color)!important; /* Цвет текста кнопок */
-  border: none!important;
+  background-color: #161a2a;
+  color: #fff;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
@@ -2993,7 +2993,7 @@ a.badge-dark {
 }
 
 .bg-primary {
-  background: #6236FF !important;
+  background: #a#171a2 !important;
   color: #FFF;
 }
 
@@ -5122,7 +5122,7 @@ textarea,
   letter-spacing: -0.01em;
   line-height: 1em;
   padding-right: 16px;
-  color: var(--tg-theme-button-text-color);
+  color: #fff;
 }
 
 .section-heading .link {
@@ -5153,6 +5153,7 @@ textarea,
   padding: 20px 24px;
   position: relative;
   z-index: 1;
+  
 }
 
 .wallet-card .balance {
@@ -5562,6 +5563,7 @@ textarea,
   display: flex;
   align-items: flex-end;
   padding: 20px 24px;
+  background-color: #1d263b;
 }
 
 .card-block .card-button {
@@ -6714,7 +6716,7 @@ body.rtl-mode .form-group.boxed .form-control.custom-select {
 }
 
 body.dark-mode {
-  background: #030108;
+  background: #161a2a;
   color: #8f82a5;
 }
 
@@ -6758,7 +6760,7 @@ body.dark-mode blockquote.blockquote .blockquote-footer {
 }
 
 body.dark-mode .appHeader {
-  background: #161129;
+  background: #171a2a!important;
   color: #fff;
   border-bottom-color: #2d1f3b;
 }
@@ -7476,8 +7478,9 @@ body.dark-mode .timeline .dot {
 }
 
 body.dark-mode .wallet-card {
-  background: #161129;
+  background: #1d263b;
   z-index: 1;
+  
 }
 
 body.dark-mode .wallet-card .balance .right .button {
