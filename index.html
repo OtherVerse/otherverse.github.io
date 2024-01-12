@@ -35,7 +35,7 @@
             <img src="https://npunks.io/staticfiles/brand-logo.f3c32c4b.png" alt="logo" class="logo">
         </div>
 		<div class="right">
-           <div id ="user_name"></div>
+           <div id ="first_name"></div>
             <a href="app-settings.html" class="headerButton">
 		
             <img id="userAvatar" alt="User Avatar" style="width: 100px; height: 100px;">
@@ -440,46 +440,11 @@
     <script src="assets/js/plugins/splide/splide.min.js"></script>
     <!-- Base Js File -->
     <script src="assets/js/base.js"></script>
+	<script src="assets/js/tg.js"></script>
 
-    <script>
-        // Add to Home with 2 seconds delay.
-        AddtoHome("2000", "once");
-    </script>
+  
 
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    // Инициализация Telegram Web Apps API
-    if (window.Telegram.WebApp) {
-        Telegram.WebApp.init();
-
-        // Получаем данные пользователя
-        let userData = Telegram.WebApp.initDataUnsafe.user;
-
-        // Если у пользователя есть фото, отображаем его
-        if (userData.photo_url) {
-            document.getElementById('userAvatar').src = userData.photo_url;
-        } else {
-            // Если фото нет, можно установить стандартное изображение
-            document.getElementById('userAvatar').src = '/assets/img/sample/avatar/avatar1.jpg';
-        }
-		
-		// Если у пользователя есть имя, отображаем его
-        if (userData.first_name) {
-            user_name = document.getElementById('user_name');
-			let p = document.createElement("p");
-			p.innerText = userData.first_name;
-			user_name.appendChild(p);
-        } else {
-            user_name = document.getElementById('user_name');
-			let p = document.createElement("p");
-			p.innerText = 'Punk";
-			user_name.appendChild(p);
-        }
-    }
-});
-
-</script>
 </body>
 
 </html>
